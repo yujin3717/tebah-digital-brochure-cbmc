@@ -151,7 +151,7 @@ export default {
             webMagazineSlider.slideTo(index - 1, 1000, true);
             self.isPageindex = index - 1;
             // progressBar set EventBus
-            self.EventBus.$emit('setProgress', index);
+            self.EventBus.$emit('setProgress', index);   
         });
         // Top으로 스크롤시 발생 bounce 제거
         this.setNotBounce();    
