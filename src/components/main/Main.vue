@@ -7,6 +7,7 @@
                 <Page3/>
                 <Page4/>
                 <Page5/>
+                <Page6/>
                 <lastCover/>
             </div>
         </div>
@@ -20,6 +21,7 @@ import Page2 from '../pages/Page2.vue'
 import Page3 from '../pages/Page3.vue'
 import Page4 from '../pages/Page4.vue'
 import Page5 from '../pages/Page5.vue'
+import Page6 from '../pages/Page6.vue'
 import lastCover from '../cover/lastCover.vue'
 import Vue from 'vue'
 
@@ -35,6 +37,7 @@ export default {
         Page3,
         Page4,
         Page5,
+        Page6,
         lastCover
     },
     data(){
@@ -139,11 +142,12 @@ export default {
         //   }
         });
         // Swiper init EventBus
-        this.EventBus.$on('swiperInit', function(){
-            self.$nextTick(function(){
-                webMagazineSlider.init();
-            });
-        });
+        // this.EventBus.$on('swiperInit', function(){
+        //     self.$nextTick(function(){
+        //         webMagazineSlider.init();
+        //     });
+        // });
+        webMagazineSlider.init();
         // Vue EventBus를 이용하여 컴포넌트간 데이터를 주고받음
         // Contents 페이지의 페이지 이동 Event 동작 수신
         this.EventBus.$on('changePage', function(index){

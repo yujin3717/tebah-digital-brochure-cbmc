@@ -79,7 +79,12 @@ export default {
               index: 5
             }
           ]
-        }
+        },
+        {
+          title: "참가신청",
+          open: false,
+          index: 6
+        },
       ]
     };
   },

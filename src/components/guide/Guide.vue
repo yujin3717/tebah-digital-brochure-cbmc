@@ -41,6 +41,9 @@ export default {
                 type: 'bullets',
             },
             on: {
+                init: function(){
+                    console.log("guideinit");
+                },
                 reachEnd: function() {
                     //set fadeOut
                     self.flag = false;

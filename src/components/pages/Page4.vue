@@ -12,8 +12,8 @@
                 <div class="spacer" style="height: 20px;"></div>
 
                 <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 16px 20px 13px; line-height: 0; background-color: #fff; border-radius: 5px;">
-                    <img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p04-1/13_30-14_00@2x.png" width="87" alt="">
+                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
+                    13:30 ~ 14:00
                 </div>
                 <div class="spacer" style="height: 15px;"></div>
                 <!-- text-block -->
@@ -25,22 +25,23 @@
 
             <div class="page-article">
                 <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 16px 20px 13px; line-height: 0; background-color: #fff; border-radius: 5px;">
-                    <img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p04-1/13_30-14_00@2x.png" width="87" alt="">
+                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
+                    14:00 ~ 14:10
                 </div>
                 <div class="spacer" style="height: 15px;"></div>
                 <!-- text-block -->
                 <div class="text-block" style="margin: 0 40px; padding: 0 20px; font-size: 14px; letter-spacing: -0.19px;">
                     <strong style="font-weight: 700;">개회선언</strong> 이용기 창업선교위원장<br>
-                    <strong style="font-weight: 700;">환영사</strong> 이승율 CBMC중앙회장 축사
+                    <strong style="font-weight: 700;">환영사</strong> 이승율 CBMC중앙회장<br>
+                    <strong style="font-weight: 700;">축사</strong> 경북도 일자리경제산업 실장
                 </div>
                 <div class="spacer" style="height: 20px;"></div>
             </div>
 
             <div class="page-article">
                 <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 16px 20px 13px; line-height: 0; background-color: #fff; border-radius: 5px;">
-                    <img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p04-1/13_30-14_00@2x.png" width="87" alt="">
+                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
+                    14:10 ~ 14:30
                 </div>
                 <div class="spacer" style="height: 15px;"></div>
                 <!-- text-block -->
@@ -52,8 +53,8 @@
 
             <div class="page-article">
                 <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 16px 20px 13px; line-height: 0; background-color: #fff; border-radius: 5px;">
-                    <img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p04-1/SESSIONI_14_40-16_00@2x.png" width="169" alt="">
+                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
+                    SESSION I | 14:30 ~ 15:40
                 </div>
                 <div class="spacer" style="height: 15px;"></div>
                 <!-- session-list.has-dots -->
@@ -70,10 +71,6 @@
                         <li>
                             <strong>'Startup's Story Platform'과 미셔널 비전</strong><br>
                             (주)르호봇비즈니스인큐베이터 박광회 회장
-                        </li>
-                        <li>
-                            <strong>엑셀러레이터 비즈니스로 창업인들을 세우는 기업</strong><br>
-                            씨엔티테크 (주) 전화성 대표
                         </li>
                     </ul>
                 </div>
@@ -95,8 +92,8 @@
 
             <div class="page-article">
                 <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 16px 20px 13px; line-height: 0; background-color: #fff; border-radius: 5px;">
-                    <img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p04-1/13_30-14_00@2x.png" width="87" alt="">
+                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
+                    15:40 ~ 15:50
                 </div>
                 <div class="spacer" style="height: 15px;"></div>
                 <!-- text-block -->

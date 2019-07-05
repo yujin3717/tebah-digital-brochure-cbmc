@@ -6,8 +6,8 @@
                 <div class="spacer" style="height: 74px;"></div>
 
                 <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 16px 20px 13px; line-height: 0; background-color: #fff; border-radius: 5px;">
-                    <img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p04-2/SESSIONII_16_10~17_20@2x.png" width="162" alt="">
+                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
+                    SESSION II 15:50 ~ 17:20
                 </div>
                 <div class="spacer" style="height: 15px;"></div>
                 <!-- text-block -->
@@ -65,8 +65,8 @@
 
             <div class="page-article">
                 <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 16px 20px 13px; line-height: 0; background-color: #fff; border-radius: 5px;">
-                    <img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p04-2/session-3.png" width="167" alt="">
+                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
+                    SESSION III | 17:20 ~ 17:30
                 </div>
                 <div class="spacer" style="height: 15px;"></div>
                 <!-- session-list.has-dots -->
@@ -91,8 +91,8 @@
 
             <div class="page-article">
                 <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 16px 20px 13px; line-height: 0; background-color: #fff; border-radius: 5px;">
-                    <img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p04-2/14_00~18_00@2x.png" width="82" alt="">
+                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
+                    SESSION IV | 14:00 ~ 18:00
                 </div>
                 <div class="spacer" style="height: 15px;"></div>
                 <!-- text-block -->
