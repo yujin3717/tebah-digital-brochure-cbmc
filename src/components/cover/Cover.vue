@@ -1,5 +1,5 @@
 <template>
-    <div id="cover" @click.prevent="moveMain" :class="{hide : isClick}">
+    <div id="cover" @click.prevent="moveMain" v-if="isClick">
         <div class="icon">
             <div class="overlay"></div>
             <object class="poster" :data="poster" type="image/svg+xml"></object>
@@ -40,7 +40,7 @@ export default {
             logo: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/cover/logo@2x.png',
             linkTxt: 'www.cbmc.or.kr',
             telTxt: '02)717-0111~2',
-            isClick: false
+            isClick: true
         }
     },
     mounted(){
@@ -48,7 +48,7 @@ export default {
     },
     methods:{
         moveMain(){
-            this.isClick = true;
+            this.isClick = false;
         }
     }
 }

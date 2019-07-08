@@ -43,7 +43,10 @@ export default {
             bgImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p01/02.explain_title@2x.png',
             leafImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p01/leaf_01@2x.png',
             leafImg2: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p01/leaf_02@2x.png',
-            Text: `킹덤 컴퍼니 대표들의 창업, 성경적 경영, 선교적 삶을 나누며 청년들이 하나님의 기업에 대한 비전을 발견하고 리더로서 준비할 수 있도록 합니다.<br>
+            Text: `
+                    CBMC는 실업인과 전문인들에게 복음을 전하여 예수그리스도가 구주이심을 증거하고 주님의 지상명령을 성취하는 국제적 사명공동체입니다.<br>
+					<br>
+                    킹덤 컴퍼니 대표들의 창업, 성경적 경영, 선교적 삶을 나누며 청년들이 하나님의 기업에 대한 비전을 발견하고 리더로서 준비할 수 있도록 합니다.<br>
                     <br>
                     창업아이템 실현을 돕는 직접적인 엑셀러레이터의 지원과 사업계획서 작성 코칭을 제공하여 실제적인 도움이 이루어지는 컨퍼런스를 마련합니다.<br>
                     <br>

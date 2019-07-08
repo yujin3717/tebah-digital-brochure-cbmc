@@ -4,54 +4,6 @@
 
             <div class="page-article">
                 <div class="spacer" style="height: 74px;"></div>
-
-                <!-- text-block -->
-                <div class="text-block">
-                    <img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p04-1/title@2x.png" width="52" alt="">
-                </div>
-                <div class="spacer" style="height: 20px;"></div>
-
-                <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
-                    13:30 ~ 14:00
-                </div>
-                <div class="spacer" style="height: 15px;"></div>
-                <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 0 20px; font-size: 14px; font-weight: 700; letter-spacing: -0.19px;">
-                    등록
-                </div>
-                <div class="spacer" style="height: 20px;"></div>
-            </div>
-
-            <div class="page-article">
-                <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
-                    14:00 ~ 14:10
-                </div>
-                <div class="spacer" style="height: 15px;"></div>
-                <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 0 20px; font-size: 14px; letter-spacing: -0.19px;">
-                    <strong style="font-weight: 700;">개회선언</strong> 이용기 창업선교위원장<br>
-                    <strong style="font-weight: 700;">환영사</strong> 이승율 CBMC중앙회장<br>
-                    <strong style="font-weight: 700;">축사</strong> 경북도 일자리경제산업 실장
-                </div>
-                <div class="spacer" style="height: 20px;"></div>
-            </div>
-
-            <div class="page-article">
-                <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
-                    14:10 ~ 14:30
-                </div>
-                <div class="spacer" style="height: 15px;"></div>
-                <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 0 20px; font-size: 14px; letter-spacing: -0.19px;">
-                    <strong style="font-weight: 700;">공연 및 간증</strong> 몽니 김신의 가수
-                </div>
-                <div class="spacer" style="height: 20px;"></div>
-            </div>
-
-            <div class="page-article">
                 <!-- text-block -->
                 <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
                     SESSION I | 14:30 ~ 15:40
@@ -75,32 +27,68 @@
                     </ul>
                 </div>
                 <div class="spacer" style="height: 10px;"></div>
-                <!-- comment-block -->
-                <div class="comment-block">
-                    <div class="comment-block-inner">
-                        - 기업경영이념<br>
-                        - 선교적 기업으로서 추진한 내용<br>
-                        - 창업동기와 하나님의 경영사례<br>
-                        - 기업가 정신<br>
-                        - 투자가가 보는 비즈니스 모델 등
-                        <div class="spacer" style="height: 5px;"></div>
-                        질문과 답 인터뷰형식의 토크쇼로 진행
-                    </div>
-                </div>
-                <div class="spacer" style="height: 20px;"></div>
             </div>
 
             <div class="page-article">
                 <!-- text-block -->
                 <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
-                    15:40 ~ 15:50
+                    SESSION II 15:50 ~ 17:20
                 </div>
                 <div class="spacer" style="height: 15px;"></div>
                 <!-- text-block -->
-                <div class="text-block" style="margin: 0 40px; padding: 0 20px; font-size: 14px; font-weight: 700; letter-spacing: -0.19px;">
-                    BREAK TIME
+                <div class="text-block" style="margin: 0 40px; padding: 0 20px; font-size: 14px; letter-spacing: -0.19px;">
+                    <strong>Track 1. CNTTECH OPEN IR</strong><br>
+                    팀당 최대 2억투자, 최대 5개 스타트업,
                 </div>
-                <div class="spacer" style="height: 70px;"></div>
+                <div class="spacer" style="height: 10px;"></div>
+                <!-- text-block -->
+                <div class="text-block" style="margin: 0 40px; padding: 0 20px 21px; font-size: 14px; letter-spacing: -0.19px;">
+                    <div>최대 <span class="billion" data-countup="victory-amount" data-count-value="1000000000" data-label="(*십억)">0</span> 원</div>
+                </div>
+                <div class="spacer" style="height: 10px;"></div>
+
+                <!-- session-list.has-dots -->
+                <div class="session-list has-dots">
+                    <ul>
+                        <li class="dot-black">
+                            <strong>5개팀 발표</strong><br>
+                            진행 : 씨엔티테크(주) 전화성 대표
+                            <div style="margin-top: 5px; font-size: 12px; letter-spacing: -0.16px; line-height: 21px;">
+                                <strong>지원기간</strong> 6월 24일부터 7월 20일<br>
+                                <strong>서류평가</strong> 7월21일 -31일 (5개 서류 합격통보 8월 1일)<br>
+                                <strong>이메일로 지원, 자유양식</strong> IR@CNTT.CO.KR<br>
+                                (투자기업 중 TIPS 연계 검토가능)
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="spacer" style="height: 10px;"></div>
+            </div>
+        
+            <div class="page-article">
+                <!-- text-block -->
+                <div class="text-block" style="margin: 0 40px; padding: 9px 20px; font-size: 15px; font-weight: 900; letter-spacing: -0.3px; background-color: #fff; border-radius: 5px;">
+                    SESSION III | 17:20 ~ 17:30
+                </div>
+                <div class="spacer" style="height: 15px;"></div>
+                <!-- session-list.has-dots -->
+                <div class="session-list">
+                    <ul>
+                        <!-- <li>
+                            <strong>시상</strong>
+                            최우수상, 우수상, 장려상, 격려상 등<br>
+                            5개 팀 모두 수상
+                        </li> -->
+                        <li>
+                            <strong>찬양</strong>
+                        </li>
+                        <li>
+                            <strong>KINGDOMIZER</strong><br>
+                            유근재 주안대학원대학교 선교학과 교수
+                        </li>
+                    </ul>
+                </div>
+                <div class="spacer" style="height: 20px;"></div>
             </div>
 
             <div class="right-line"></div>
@@ -112,7 +100,14 @@
 
 <script>
 export default {
-    
+    data(){
+        return{
+            pagenum: 'page-4',
+            datanbrandNm: 'CBMC 한국대회 청년초청집회',
+            session1Title: 'SESSION I | 14:30 ~ 15:40',
+            
+        }
+    }
 }
 </script>
 

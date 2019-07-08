@@ -1,7 +1,7 @@
 <template>
   <div id="wrap" class="max-container">
     <Cover/>
-    <!-- <Guide/> -->
+    <Guide/>
     <Header/>
     <Drawer/>
     <Main/>

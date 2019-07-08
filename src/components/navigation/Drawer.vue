@@ -67,23 +67,12 @@ export default {
         {
           title: "집회내용",
           open: false,
-          subTree: [
-            {
-              title: "집회내용 PART 1",
-              pagenum: "P.04",
-              index: 4
-            },
-            {
-              title: "집회내용 PART 2",
-              pagenum: "P.05",
-              index: 5
-            }
-          ]
+          index:4
         },
         {
           title: "참가신청",
           open: false,
-          index: 6
+          index: 5
         },
       ]
     };
