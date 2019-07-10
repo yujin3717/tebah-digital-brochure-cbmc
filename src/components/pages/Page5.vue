@@ -6,25 +6,20 @@
                 <div class="spacer" style="height: 100px;"></div>
 
                 <div class="application">
-                    <a href="https://forms.gle/cCQ5pnSg3hCLxrGc9" target="_blank" rel="noopener noreferrer"><img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/participation_btn_txt@2x.png" width="222" alt=""></a>
+                    <a :href="formshref" target="_blank" rel="noopener noreferrer"><img class="swiper-lazy" :data-src="formImg" width="222" alt=""></a>
                 </div>
 
                 <div class="ir-application">
-                    <a class="ir-btn" href="mailto:IR@cntt.co.kr" target="_blank" rel="noopener noreferrer"><img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/IR_btn_txt@2x.png" width="58" alt=""></a>
-                    <div class="note">*IR 신청은 청년집회에 참가하셔야 가능합니다.</div>
+                    <a class="ir-btn" :href="'mailto:' + mailhref" target="_blank" rel="noopener noreferrer"><img class="swiper-lazy" :data-src="mailImg" width="58" alt=""></a>
+                    <div class="note">{{irtxt}}</div>
                 </div>
 
                 <div class="sponsor">
                     <div class="label">
-                        <img class="swiper-lazy" data-src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/sponsor_txt@2x.png" width="54" alt="">
+                        <img class="swiper-lazy" :data-src="sponImg" width="54" alt="">
                         <div class="label-bg"></div>
                     </div>
-                    <div class="content">
-                        <div class="description">후원금 입금 계좌번호</div>
-                        <div class="back-account">
-                            KEB 하나은행<br>
-                            209-890089-66605
-                        </div>
+                    <div class="content" v-html="spontxt">
                     </div>
                 </div>
 
@@ -42,7 +37,7 @@
             </div>
 
             <div class="leaf-right">
-                <img class="swiper-lazy" src="http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/leaf_right@2x.png" width="101" alt="">
+                <img class="swiper-lazy" :src="leafright" width="101" alt="">
             </div>
 
         </div>
@@ -51,7 +46,22 @@
 
 <script>
 export default {
-    
+    data(){
+        return{
+            formshref: 'https://forms.gle/cCQ5pnSg3hCLxrGc9',
+            formImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/participation_btn_txt@2x.png',
+            mailhref: 'IR@cntt.co.kr',
+            mailImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/IR_btn_txt@2x.png',
+            irtxt: '*IR 신청은 청년집회에 참가하셔야 가능합니다.',
+            sponImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/sponsor_txt@2x.png',
+            spontxt: `<div class="description">후원금 입금 계좌번호</div>
+                        <div class="back-account">
+                            KEB 하나은행<br>
+                            209-890089-66605
+                        </div>`,
+            leafright: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/leaf_right@2x.png'
+        }
+    }
 }
 </script>
 

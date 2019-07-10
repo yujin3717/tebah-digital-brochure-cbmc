@@ -21,7 +21,7 @@
             <div class="time"><img :src="coverImg" width="255" alt=""></div>
             <div class="contact">
                 <a class="stopProp" @click.stop :href="linkSrc" target="_blank" rel="noopener noreferrer"><i class="cuscon-android-home"></i> <span class="text">{{linkTxt}}</span></a> |
-                <a class="stopProp" @click.stop :href="tel"><i class="cuscon-android-call animate"></i> <span class="text">{{telTxt}}</span></a></div>
+                <a class="stopProp" @click.stop :href="'tel:' + tel"><i class="cuscon-android-call animate"></i> <span class="text">{{telTxt}}</span></a></div>
             <div class="amount"><img :src="amount" width="84" alt=""></div>
             <div class="logo"><img :src="logo" width="113" alt=""></div>
         </div>
@@ -35,7 +35,7 @@ export default {
             poster: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/cover/cover.svg',
             coverImg : 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/cover/time.png',
             linkSrc: 'http://www.cbmc.or.kr',
-            tel: 'tel:02-717-0111',
+            tel: '02-717-0111',
             amount: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/cover/money@2x.png',
             logo: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/cover/logo@2x.png',
             linkTxt: 'www.cbmc.or.kr',
