@@ -25,6 +25,15 @@
                     v-html="txt"
                 >
                 </div>
+                <div class="spacer" style="height: 40px;"></div>
+
+                <!-- text-block -->
+                <div 
+                    class="text-block" 
+                    style="margin: 0 40px; padding: 20px; font-size: 15px; color: #000; letter-spacing: -0.2px; line-height: 25px; background-color: #efefc1; border-radius: 20px;"
+                    v-html="txt2"
+                >
+                </div>
                 <div class="spacer" style="height: 70px;"></div>
             </div>
 
@@ -40,11 +49,15 @@ export default {
             databrandNm: 'CBMC 한국대회 청년초청집회',
             bgImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p03/04.concept_sub@2x.png',
             txtImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p03/04.concept_title@2x.png',
-            txt: `킹덤컴퍼니의 기초가 되는 창업아이템을 선정하여 지원하고, 또한 정부지원금 등 투자 유치에 필요한 사업계획서 작성에 관한 코칭 세션을 제공하여 청년들을 실질적으로 돕고자 합니다.<br>
-                    <br>
-                    화합과 즐거움을 누릴 수 있는 공연을 통해 학생들의 젊음을 발산할 수 있도록 합니다.<br>
-                    <br>
-                    청년 창업가, 전문가로서 갖추어야 할 신앙적 자세를 다질 수 있도록 합니다.`
+            txt: `특강 형식의 One-Way 전달 방식을 지양하고, 인터뷰 및 질문 등으로 구성한 Interaction Communication 방식으로 주요 내용을 전달합니다.<br>
+									<br>
+									화합과 즐거움을 누릴 수 있는 공연을 통해 학생들의 젊음을 발산할 수 있도록 합니다.<br>
+									<br>
+									청년 창업가, 전문가로서 갖추어야 할 신앙적 자세를 다질 수 있도록 합니다.`,
+            txt2: `<strong>행사 취지</strong><br>
+                    1. 청년세대의 어려움에 기독실업인들이 가지고 있는 경험과 자원을 나누고, 도움을 제공하기 위한 취지입니다.<br>
+                    2. 이 시대의 청년들에게 성경적 가치관을 가진 비즈니스 리더로 준비시켜, 세상의 빛과 소금이 되도록 이를 후원하고자 합니다.<br>
+                    3. 새로운 시대적 선교 패러다임으로 비즈니스 선교 활동을 접목하여, 보다 입체적인 선교를 하는데 기여하고자 합니다.`
         }
     }
 }
