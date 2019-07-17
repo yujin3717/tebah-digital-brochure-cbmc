@@ -10,8 +10,13 @@
                 </div>
 
                 <div class="ir-application">
-                    <a class="ir-btn" :href="'mailto:' + mailhref" target="_blank" rel="noopener noreferrer"><img class="swiper-lazy" :data-src="mailImg" width="58" alt=""></a>
+                    <a class="ir-btn" :href="'mailto:' + mailhref" target="_blank" rel="noopener noreferrer"><img class="swiper-lazy" :data-src="mailImg" width="122" alt=""></a>
                     <div class="note">{{irtxt}}</div>
+                </div>
+
+                <div class="survey-application">
+                    <a class="survey-btn" :href="surveyhref" target="_blank" rel="noopener noreferrer"><img class="swiper-lazy" :data-src="surveyImg" width="95" alt=""></a>
+                    <div class="note">{{surveytxt}}</div>
                 </div>
 
                 <div class="sponsor">
@@ -49,10 +54,13 @@ export default {
     data(){
         return{
             formshref: 'https://forms.gle/cCQ5pnSg3hCLxrGc9',
-            formImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/participation_btn_txt@2x.png',
+            formImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/m1/request-text.png',
             mailhref: 'IR@cntt.co.kr',
-            mailImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/IR_btn_txt@2x.png',
-            irtxt: '*IR 신청은 청년집회에 참가하셔야 가능합니다.',
+            mailImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/m1/ir-request-btn.png',
+            irtxt: '*Open-IR 참여를 위해 먼저 참가신청을 부탁드립니다.',
+            surveyhref: 'https://forms.gle/KpXhrNRYEs9D71o1A',
+            surveyImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/m1/googleform.png',
+            surveytxt: `* 요구도를 조사 분석하여 행사에 참여하시는 모든 분들께 도움이 되는 프로그램을 운영하고자 합니다.`,
             sponImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/sponsor_txt@2x.png',
             spontxt: `<div class="description">후원금 입금 계좌번호</div>
                         <div class="back-account">

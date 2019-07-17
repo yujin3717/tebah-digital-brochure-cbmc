@@ -184,16 +184,46 @@ export default {
                 }
             }
         });  
+
+        //   setSpinner
+        this.$emit('setSpinner');
+    },
+    updated(){
+        // console.log("updated");
+        // this.EventBus.$emit('setSpinner');
     },
     methods:{
         animation(activeSlide, previousSlide){
-            // console.log("animation : " + activeSlide);
-            // console.log(activeSlide);
-            // var pageHeight = Array.from(document.getElementsByClassName('page-common'), el => el.getBoundingClientRect().height);
-            // var highest = Math.max(...pageHeight);
-            var pageHeight = activeSlide.clientHeight;
-            var highest = pageHeight - 30;
-            
+            var pageHeight = document.body.clientHeight;
+            var trigger = pageHeight - 30;
+
+            // 일반 애니메이션
+            var animation = activeSlide.querySelectorAll('[data-animation]');
+            if ( animation.length > 0 ) {
+                for ( var i = animation.length - 1; i >= 0; i-- ) {
+                    var t             = animation[i];
+                    var customTrigger = t.getAttribute('data-animation-trigger');
+                    var rect          = t.getBoundingClientRect();
+                    var offset        = Math.ceil( rect.top + rect.height );
+                    /**
+                     * rect.top: 해당 요소의 offset top
+                     * rect.hegiht: 해당 요소의 height
+                     * 두 수를 합하면 해당 요소의 offset bottom 값을 구할 수 있다.
+                     */
+
+                    if ( customTrigger !== null ) {
+                        if ( customTrigger == 'top' ) {
+                            offset = Math.ceil( rect.top );
+                        } else if ( customTrigger == 'middle' ) {
+                            offset = Math.ceil( rect.top + ( rect.height / 2 ) );
+                        }
+                    }
+
+                    if ( ( offset < trigger ) && ! t.classList.contains('show') ) {
+                        t.classList.add('show');
+                    }
+                }
+            }
             
             var active = Array.from(activeSlide.getElementsByClassName('animate'));
             var prev = null;
@@ -210,14 +240,6 @@ export default {
                 prevPanorama = previousSlide.classList.contains('panorama-slider-page');
             }
             
-            active.forEach(function(el){
-                var offset = Math.ceil(el.getBoundingClientRect().top);
-
-                if( offset < Math.ceil(highest / 1.2 )) {
-                    el.classList.add("show");
-                }
-            });
-
             if(prev !== null) {
                 prev.forEach(function(el){
                     el.classList.remove("show");

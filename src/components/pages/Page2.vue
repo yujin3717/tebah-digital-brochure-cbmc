@@ -84,7 +84,7 @@ export default {
                     height: '15px'
                 },
                 {
-                    href: '',
+                    href: '#',
                     Img: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/add-1/you_img@2x.png',
                     nameImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/add-1/you_txt@2x.png',
                     txt: `주안대학교 대학원 교수<br>

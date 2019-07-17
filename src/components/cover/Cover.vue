@@ -1,5 +1,5 @@
 <template>
-    <div id="cover" @click.prevent="moveMain" v-show="isClick">
+    <div id="cover" @click.prevent="moveMain($event)">
         <div class="icon">
             <div class="overlay"></div>
             <object class="poster" :data="poster" type="image/svg+xml"></object>
@@ -29,6 +29,10 @@
 </template>
 
 <script>
+import Vue from 'vue';
+
+Vue.prototype.EventBus = new Vue();
+
 export default {
     data(){
         return{
@@ -47,8 +51,21 @@ export default {
         
     },
     methods:{
-        moveMain(){
-            this.isClick = false;
+        moveMain(target){
+            var cover = document.querySelector('#cover');
+            var coverTimer;
+            
+            // this.isClick = false;
+            if ( ! cover.classList.contains('hide') ) {
+                cover.classList.add('hide');
+                cover.addEventListener('animationend', function(ev) {
+                    if (ev.type === 'animationend') {
+                        cover.style.display = "none";
+                    }
+                });
+            } else {
+                return false;
+            }
         }
     }
 }
