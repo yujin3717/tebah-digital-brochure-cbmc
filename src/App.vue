@@ -2,7 +2,7 @@
   <div id="wrap" class="max-container">
     <Spinner v-show="loading"/>
     <Cover/>
-    <Guide/>
+    <!-- <Guide/> -->
     <Header/>
     <Drawer/>
     <Main @setSpinner="setSpin"/>
@@ -41,7 +41,7 @@ export default {
   mounted(){
     var self = this;
     // this.EventBus.$on('setSpinner', function(){
-    //     console.log("setSpinner");
+    //     console.log("setSpinner2");
     //   });
     // this.$nextTick(function () {
     //   // 모든 화면이 렌더링된 후 실행합니다.
@@ -64,11 +64,13 @@ export default {
     }
   }
 
-  
+
 }
 </script>
 
 
 <style lang="scss">
+@import "@/assets/common.scss";
+
 
 </style>

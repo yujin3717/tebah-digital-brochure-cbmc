@@ -2,8 +2,8 @@
     <div id="page-container">
         <div id="page-container-inner" class="page-slider-container swiper-container">
             <div class="swiper-wrapper">
-                <!-- <Page1/>
-                <Page2/>
+                <Page1/>
+                <!--<Page2/>
                 <Page3/>
                 <Page4/>
                 <Page5/> -->
@@ -39,7 +39,7 @@ export default {
     },
     data(){
         return{
-            
+            activeIndex: ''
         }
     },
     mounted(){
@@ -75,6 +75,7 @@ export default {
                   var previousSlide = this.slides[this.previousIndex];
                   self.activeSlide = activeSlide;
                   self.previousSlide = previousSlide;
+                  self.activeIndex = this.activeIndex;
                   // ScrollInfo init
                   self.initScrollInfo(this.slides);
                   //page Scrolling Event
@@ -87,7 +88,7 @@ export default {
                   // Header 처리 EventBus
                   self.EventBus.$emit('setHeader',activeSlide, previousSlide);
                   // 동영상 광고 페이지
-                //   self.videoAdPageFnc(activeSlide, previousSlide);
+                  self.videoAdPageFnc(activeSlide, previousSlide);
                   // ScrollInfo set
                   self.setScrollInfo(activeSlide,previousSlide);
                   // Countup Event
@@ -96,7 +97,7 @@ export default {
               slideChange: function() {
                   //Progressbar set EventBus
                   self.EventBus.$emit('setProgress', this.activeIndex + 1);
-                  
+
                   var activeSlide   = this.slides[this.activeIndex];
                   var previousSlide = this.slides[this.previousIndex];
 
@@ -109,7 +110,7 @@ export default {
               slideChangeTransitionEnd: function() {
                   var activeSlide   = this.slides[this.activeIndex];
                   var previousSlide = this.slides[this.previousIndex];
-                
+
                   self.activeSlide = activeSlide;
                   self.previousSlide = previousSlide;
 
@@ -121,8 +122,8 @@ export default {
                   self.EventBus.$emit('setHeader',activeSlide, previousSlide);
                   //page contents animation Event
                   self.animation(activeSlide, previousSlide);
-                  // 동영상 광고 페이지(해당 브로슈어는 동영상 페이지가 없음)
-                //   self.videoAdPageFnc(activeSlide, previousSlide);
+                  // 동영상 광고 페이지
+                  self.videoAdPageFnc(activeSlide, previousSlide);
                   // ScrollInfo set
                   self.setScrollInfo(activeSlide,previousSlide);
                   // Countup Event
@@ -131,13 +132,8 @@ export default {
                 //   self.setInnerSlide();
               }
           },
-        //   virtual:{
-        //       slides: self.slides,
-        //       renderExternal(data){
-        //           self.virtualData = data;
-        //       }
-        //   }
         });
+
         // Swiper init EventBus
         this.EventBus.$on('swiperInit', function(){
             self.$nextTick(function(){
@@ -151,10 +147,10 @@ export default {
             webMagazineSlider.slideTo(index - 1, 1000, true);
             self.isPageindex = index - 1;
             // progressBar set EventBus
-            self.EventBus.$emit('setProgress', index);   
+            self.EventBus.$emit('setProgress', index);
         });
         // Top으로 스크롤시 발생 bounce 제거
-        this.setNotBounce();    
+        this.setNotBounce();
         // Panorama Slider Page
         var panoramaSlider = new Swiper('.panorama-slider', {
             loop: false,
@@ -183,10 +179,14 @@ export default {
                     });
                 }
             }
-        });  
+        });
 
         //   setSpinner
         this.$emit('setSpinner');
+        // goToNext
+        this.EventBus.$on('gotoNext', function(){
+            webMagazineSlider.slideNext();
+        });
     },
     updated(){
         // console.log("updated");
@@ -224,10 +224,10 @@ export default {
                     }
                 }
             }
-            
+
             var active = Array.from(activeSlide.getElementsByClassName('animate'));
             var prev = null;
-            
+
             var isAnipage = activeSlide.classList.contains('animation-page');
             var prevAnipage = null;
 
@@ -239,7 +239,7 @@ export default {
                 prevAnipage = previousSlide.classList.contains('animation-start');
                 prevPanorama = previousSlide.classList.contains('panorama-slider-page');
             }
-            
+
             if(prev !== null) {
                 prev.forEach(function(el){
                     el.classList.remove("show");
@@ -304,14 +304,14 @@ export default {
             var slides = Array.from(slides);
 
             slides.forEach(function(el){
-                
+
                 var Scrollcontent = el.querySelector('.scroll-content');
                 // console.log(Scrollcontent);
                 if(Scrollcontent.clientHeight > el.clientHeight){
                     el.insertAdjacentHTML('beforeend', '<div class="scroll-info"><div class="scroll-info-inner"><i class="cuscon-scrolling"></i></div></div>');
                 }
             });
-            
+
         },
         setScrollInfo(activeSlide, previousSlide){
 
@@ -330,10 +330,10 @@ export default {
             }
         },
         scrollingEvent(status){
-            
+
             var container = this.$el.lastChild,
                 st        = status.offset.y;
-            
+
             this.animation(container);
 
             // 연속적인 숫자일 경우 뒷 숫자를 애니메이션 처리(countup.js 이용)
@@ -352,12 +352,13 @@ export default {
             }
 
             this.lastSt = st;
-        
+
         },
         videoAdPageFnc(activeSlide, previousSlide){
             var isVideo = activeSlide.classList.contains('video-ad-page');
 
             if(isVideo){
+
                 //동영상 페이지인경우 동영상 플레이 EventBus
                 this.EventBus.$emit('playVideo');
             }else{
@@ -402,9 +403,9 @@ export default {
             var countElm  = this.activeSlide.querySelectorAll('[data-countup]');
             var pageHeight = this.activeSlide.clientHeight;
             var trigger = pageHeight - 30;
-            
+
             if ( countElm.length > 0 ) {
-                
+
                 for ( var i = countElm.length - 1; i >= 0; i-- ) {
                     var t      = countElm[i];
                     var rect   = t.getBoundingClientRect();
