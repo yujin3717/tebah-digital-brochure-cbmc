@@ -12,7 +12,7 @@
                 <div class="video">
                     <video
                         id="videoPlayer"
-                        poster="http://dev.tebah.media/cbmc/video-brochure/video-poster.jpg"
+                        poster="https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/video-poster.jpg"
                         muted="true"
                         playsinline="true"
                         preload="metadata"
@@ -35,7 +35,7 @@ export default {
         return {
             pagenum : 'page-1',
             databrandNm: 'CBMC 한국대회 청년초청집회',
-            video: 'http://dev.tebah.media/cbmc/video-brochure/video.mp4',
+            video: 'https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/video.mp4',
             // 실행, 음소거, 멈췄을경우 광고여부, 일시정지버튼 숨김여부 토큰
             playing: false,
             ismuted: true,
