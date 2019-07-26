@@ -25,6 +25,7 @@
                     <div class="choice-Text" v-html="noText"></div>
                 </div>
                 <div class="choice" @click.prevent="moveMain($event)">
+                    <div id="demo"></div>
                     <a href="#"><img class="choice-icon" :src="yesImg" width="80" alt=""></a>
                     <div class="choice-Text" v-html="yesText"></div>
                 </div>
@@ -48,9 +49,9 @@ export default {
             clockText: '나중에 보기',
             talkImg: 'http://dev.tebah.media/cbmc/video-brochure/talk@2x.png',
             talkText: '메세지',
-            noImg: 'http://dev.tebah.media/cbmc/video-brochure/거절@2x.png',
+            noImg: 'http://dev.tebah.media/cbmc/video-brochure/no@2x.png',
             noText: '거절',
-            yesImg: 'http://dev.tebah.media/cbmc/video-brochure/응답@2x.png',
+            yesImg: 'http://dev.tebah.media/cbmc/video-brochure/yes@2x.png',
             yesText: '응답',
             isClick: true,
         }

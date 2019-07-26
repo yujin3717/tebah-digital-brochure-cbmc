@@ -5,12 +5,13 @@
 
                 <div class="header">
                     <span class="ad">AD</span>
-                    <button type="button" class="volume mute active"><i class="cuscon-volume-mute"></i></button>
-                    <button type="button" class="volume on"><i class="cuscon-volume-on"></i></button>
+                    <button @click.prevent="muted" type="button" class="volume mute" :class="{active: ismuted}" ><i class="cuscon-volume-mute"></i></button>
+                    <button @click.prevent="muted" type="button" class="volume on" :class="{active: !ismuted}"><i class="cuscon-volume-on"></i></button>
                 </div>
 
                 <div class="video">
                     <video
+                        id="videoPlayer"
                         poster="http://dev.tebah.media/cbmc/video-brochure/video-poster.jpg"
                         muted="true"
                         playsinline="true"

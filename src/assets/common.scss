@@ -12,7 +12,7 @@
 
 		.call{
 			text-align: center;
-			margin-top: 90px;
+			margin-top: 60px;
 			color: #fff;
 
 			.name{
@@ -31,7 +31,7 @@
 
 	.bottom {
 		flex: 0 0 auto;
-		padding-bottom: 70px;
+		padding-bottom: 50px;
 
 		.bell{
 			max-width: 260px;
@@ -67,18 +67,46 @@
 			margin: 0 auto;
 			justify-content: space-between;
 
-			.flex-bell{
+			.choice{
+				position: relative;
 				display: flex;
 				flex-direction: column;
 				align-items: center;
+				z-index: 9999;
 
-				.bell-icon{
+				#demo{
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 80px;
+					height: 80px;
+					border-radius: 50%;
+					z-index: -1;
+					animation: blinking 1.5s linear infinite forwards;
+				}
+
+				.choice-icon{
 					margin-bottom: 7px;
 				}
 
-				.bell-text{
+				.choice-text{
 					font-size: 15px;
 					font-weight: 500;
+				}
+
+				@keyframes blinking {
+					0%{
+						transform: scale(1);
+						opacity: 0;
+					}
+					20% {
+						background-color: #bdffb7;
+						opacity: 1;
+					}
+					100%{
+						transform: scale(1.2);
+						opacity: 0;
+					}
 				}
 			}
 		}
@@ -123,17 +151,39 @@
 
 .page-common-inner{
 	.page-article{
+
 		.box{
 			position: relative;
-			display: flex;
 			height: 100px;
-			margin: 0 40px 25px;
+			margin: 0px 40px 35px;
 			text-align: center;
-			justify-content: center;
-			align-items: center;
-			vertical-align: middle;
 			box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 			border-radius: 10px;
+			background-size: cover;
+			overflow: hidden;
+
+
+			a {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 10;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				color: #fff;
+				font-size: 13px;
+				font-weight: 400;
+				letter-spacing: -0.17px;
+
+				.video-text{
+					margin-bottom: -15px;
+					padding: 10px;
+				}
+			}
 
 			.youtube-icon{
 				position: relative;
@@ -150,11 +200,17 @@
 				border-radius: 10px;
 				background-color: #000;
 				opacity: 0.3;
+
+				.videoText{
+					color: #fff;
+					z-index: 999999999;
+				}
 			}
 		}
 
 		.attend{
 			background-image: linear-gradient(135deg, #ff7f6b 0%, #da5548 100%);
+			margin-top: 20px;
 		}
 
 		.bank{
@@ -187,6 +243,7 @@
 		.page-article {
 			.bank,
 			.box {
+				margin-top: -10px;
 				margin-left: 20px;
 				margin-right: 20px;
 			}
