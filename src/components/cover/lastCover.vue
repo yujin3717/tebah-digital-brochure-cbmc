@@ -12,7 +12,7 @@
 
                 <div class="box video01 swiper-lazy" :data-background="video01">
                     <a href="https://www.youtube.com/watch?v=e8YW4MNdh50&feature=youtu.be" target="_blank" rel="noopener noreferrer">
-                        <img class="youtube-icon" src="http://dev.tebah.media/cbmc/video-brochure/youtube@2x.png" width="50" alt="">
+                        <img class="youtube-icon" src="https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/youtube@2x.png" width="50" alt="">
                         <div class="video-text">주요 강사진 인터뷰</div>
                     </a>
                     <div class="screen"></div>
@@ -20,7 +20,7 @@
 
                 <div class="box video02 swiper-lazy" :data-background="video02">
                     <a href="https://www.youtube.com/watch?v=WFb01rMDpFY&feature=youtu.be" target="_blank" rel="noopener noreferrer">
-                        <img class="youtube-icon" src="http://dev.tebah.media/cbmc/video-brochure/youtube@2x.png" width="50" alt="">
+                        <img class="youtube-icon" src="https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/youtube@2x.png" width="50" alt="">
                         <div class="video-text">전년도 행사 영상 보러 가기</div>
                     </a>
                     <div class="screen"></div>
@@ -64,14 +64,14 @@ export default {
             surveyhref: 'https://forms.gle/KpXhrNRYEs9D71o1A',
             surveyImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/m1/googleform.png',
             sponImg: 'http://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/images/p06/sponsor_txt@2x.png',
-            video01: 'http://dev.tebah.media/cbmc/video-brochure/video01.jpg',
-            video02: 'http://dev.tebah.media/cbmc/video-brochure/video02.jpg',
+            video01: 'https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/video01.jpg',
+            video02: 'https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/video02.jpg',
             videoText: 'asdasd',
             spontxt: `후원하기
                         <div class="back-account">
                             KEB 하나은행 209-890089-66605
                         </div>`,
-            leafright: 'http://dev.tebah.media/cbmc/video-brochure/leaf_right@2x.png'
+            leafright: 'https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/leaf_right@2x.png'
         }
     }
 }
