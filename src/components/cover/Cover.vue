@@ -42,16 +42,16 @@ Vue.prototype.EventBus = new Vue();
 export default {
     data(){
         return{
-            poster: 'http://dev.tebah.media/cbmc/video-brochure/back@1x.png',
+            poster: 'https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/back@1x.png',
             name: '스타트업 선배님',
             text: '&#40;a.k.a 레전드&#41;',
-            clockImg: 'http://dev.tebah.media/cbmc/video-brochure/clock@2x.png',
+            clockImg: 'https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/clock@2x.png',
             clockText: '나중에 보기',
-            talkImg: 'http://dev.tebah.media/cbmc/video-brochure/talk@2x.png',
+            talkImg: 'https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/talk@2x.png',
             talkText: '메세지',
-            noImg: 'http://dev.tebah.media/cbmc/video-brochure/no@2x.png',
+            noImg: 'https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/no@2x.png',
             noText: '거절',
-            yesImg: 'http://dev.tebah.media/cbmc/video-brochure/yes@2x.png',
+            yesImg: 'https://d2bdkorgfosgj9.cloudfront.net/brochure/cbmc/video-brochure/yes@2x.png',
             yesText: '응답',
             isClick: true,
         }
